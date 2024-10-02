@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Workout Planner</h1>
+    <input type="text" id="exercise-input" placeholder="Enter exercise">
+    <select id="category-select">
+        <option value="Strength">Strength</option>
+        <option value="Cardio">Cardio</option>
+        <option value="Flexibility">Flexibility</option>
+        <option value="Endurance">Endurance</option>
+    </select>
+    <select id="day-select">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+    </select>
+    <button id="add-exercise">Add Exercise</button>
+
+    <div class="workout-days">
+        <div class="day" data-day="Monday">
+            <h2>Monday</h2>
+            <ul id="monday-list" class="exercise-list"></ul>
+        </div>
+        <div class="day" data-day="Tuesday">
+            <h2>Tuesday</h2>
+            <ul id="tuesday-list" class="exercise-list"></ul>
+        </div>
+        <div class="day" data-day="Wednesday">
+            <h2>Wednesday</h2>
+            <ul id="wednesday-list" class="exercise-list"></ul>
+        </div>
+        <div class="day" data-day="Thursday">
+            <h2>Thursday</h2>
+            <ul id="thursday-list" class="exercise-list"></ul>
+        </div>
+        <div class="day" data-day="Friday">
+            <h2>Friday</h2>
+            <ul id="friday-list" class="exercise-list"></ul>
+        </div>
+        <div class="day" data-day="Saturday">
+            <h2>Saturday</h2>
+            <ul id="saturday-list" class="exercise-list"></ul>
+        </div>
+        <div class="day" data-day="Sunday">
+            <h2>Sunday</h2>
+            <ul id="sunday-list" class="exercise-list"></ul>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
